@@ -52,26 +52,26 @@ const Countdown = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="flex flex-col items-center space-y-8">
-      <div className="grid grid-cols-4 gap-4 text-center">
-        <div className="bg-zinc-800/50 backdrop-blur-sm p-6 rounded-2xl border border-zinc-700">
-          <div className="text-5xl font-mono font-bold text-orange-500">{timeLeft.days}</div>
-          <div className="text-sm uppercase tracking-wider text-gray-400 mt-2">Days</div>
+    <div className="flex flex-col items-center space-y-4 md:space-y-8 p-2">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 text-center w-full max-w-4xl">
+        <div className="bg-zinc-800/50 backdrop-blur-sm p-3 md:p-6 rounded-2xl border border-zinc-700">
+          <div className="text-2xl md:text-5xl font-mono font-bold text-orange-500 break-words">{timeLeft.days}</div>
+          <div className="text-xs md:text-sm uppercase tracking-wider text-gray-400 mt-1 md:mt-2">Days</div>
         </div>
-        <div className="bg-zinc-800/50 backdrop-blur-sm p-6 rounded-2xl border border-zinc-700">
-          <div className="text-5xl font-mono font-bold text-orange-500">{timeLeft.hours}</div>
-          <div className="text-sm uppercase tracking-wider text-gray-400 mt-2">Hours</div>
+        <div className="bg-zinc-800/50 backdrop-blur-sm p-3 md:p-6 rounded-2xl border border-zinc-700">
+          <div className="text-2xl md:text-5xl font-mono font-bold text-orange-500 break-words">{timeLeft.hours}</div>
+          <div className="text-xs md:text-sm uppercase tracking-wider text-gray-400 mt-1 md:mt-2">Hours</div>
         </div>
-        <div className="bg-zinc-800/50 backdrop-blur-sm p-6 rounded-2xl border border-zinc-700">
-          <div className="text-5xl font-mono font-bold text-orange-500">{timeLeft.minutes}</div>
-          <div className="text-sm uppercase tracking-wider text-gray-400 mt-2">Minutes</div>
+        <div className="bg-zinc-800/50 backdrop-blur-sm p-3 md:p-6 rounded-2xl border border-zinc-700">
+          <div className="text-2xl md:text-5xl font-mono font-bold text-orange-500 break-words">{timeLeft.minutes}</div>
+          <div className="text-xs md:text-sm uppercase tracking-wider text-gray-400 mt-1 md:mt-2">Minutes</div>
         </div>
-        <div className="bg-zinc-800/50 backdrop-blur-sm p-6 rounded-2xl border border-zinc-700">
-          <div className="text-5xl font-mono font-bold text-orange-500">{timeLeft.seconds}</div>
-          <div className="text-sm uppercase tracking-wider text-gray-400 mt-2">Seconds</div>
+        <div className="bg-zinc-800/50 backdrop-blur-sm p-3 md:p-6 rounded-2xl border border-zinc-700">
+          <div className="text-2xl md:text-5xl font-mono font-bold text-orange-500 break-words">{timeLeft.seconds}</div>
+          <div className="text-xs md:text-sm uppercase tracking-wider text-gray-400 mt-1 md:mt-2">Seconds</div>
         </div>
       </div>
-      <div className="text-lg text-gray-400 animate-pulse">
+      <div className="text-sm md:text-lg text-gray-400 animate-pulse text-center break-words">
         T-Minus {timeLeft.days}:{timeLeft.hours}:{timeLeft.minutes}:{timeLeft.seconds}
       </div>
     </div>

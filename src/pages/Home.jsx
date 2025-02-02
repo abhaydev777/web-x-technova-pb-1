@@ -207,7 +207,7 @@ const Home = () => {
         className="relative -mt-20 z-20 max-w-4xl mx-auto px-4"
         variants={itemVariants}
       >
-        <div className="bg-zinc-900 backdrop-blur-lg bg-opacity-90 rounded-3xl shadow-2xl border border-zinc-800 p-8 relative">
+        <div className="bg-zinc-900 backdrop-blur-lg bg-opacity-90 rounded-3xl shadow-2xl border border-zinc-800 p-8 relative overflow-x-auto">
           <div className="absolute inset-0">
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] rounded-3xl"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-purple-500/10 to-transparent rounded-3xl"></div>
